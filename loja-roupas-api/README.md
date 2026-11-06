@@ -11,7 +11,9 @@ src/
 │   ├── java/br/com/lojaroupas/
 │   │   ├── LojaRoupasApiApplication.java
 │   │   ├── dao/       # Contratos e implementações de persistência
-│   │   └── dominio/   # Entidades e regras do domínio
+│   │   ├── dominio/   # Entidades e regras do domínio
+│   │   ├── dto/       # Dados de entrada e saída da API
+│   │   └── mapper/    # Conversão entre DTOs e entidades
 │   └── resources/     # Configurações e recursos da aplicação
 └── test/
     └── java/br/com/lojaroupas/  # Testes automatizados

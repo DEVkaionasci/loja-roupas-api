@@ -1,10 +1,34 @@
 # Loja de Roupas Online - API
-Backend (sem interface gráfica) de uma loja de roupas online, desenvolvido para o Projeto Final
-de Padrões de Projeto em Aplicações Web (IF Baiano - ADS).
 
-## Domínio do problema
-A loja precisa cadastrar produtos (roupas com tamanho e estoque), clientes e registrar pedidos.
-Cada pedido calcula subtotal, desconto por cupom e frete (padrão, expresso e com seguro).
+Backend de uma loja de roupas online, desenvolvido para o Projeto Final de
+Padrões de Projeto em Aplicações Web (IF Baiano - ADS).
 
-## Em construção
-Este README será completado ao final do projeto (execução, endpoints e padrões utilizados).
+## Estrutura do projeto
+
+```text
+src/
+├── main/
+│   ├── java/br/com/lojaroupas/
+│   │   ├── LojaRoupasApiApplication.java
+│   │   ├── dao/       # Contratos e implementações de persistência
+│   │   └── dominio/   # Entidades e regras do domínio
+│   └── resources/     # Configurações e recursos da aplicação
+└── test/
+    └── java/br/com/lojaroupas/  # Testes automatizados
+```
+
+## Executar os testes
+
+Na pasta do projeto Maven, execute:
+
+```powershell
+.\mvnw.cmd test
+```
+
+O projeto requer Java 17 ou superior.
+
+## Domínio
+
+A loja cadastra produtos (roupas com tamanho e estoque), clientes e pedidos.
+Cada pedido calcula subtotal, desconto por cupom e frete (padrão, expresso e
+com seguro).
